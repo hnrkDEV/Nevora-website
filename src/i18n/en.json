@@ -1,0 +1,85 @@
+{
+  "navbar": {
+    "navs": ["home", "about", "services", "portfolio", "contact"]
+  },
+  "home": {
+    "hero": {
+      "title": "Turning ideas into webmarket dominance.",
+      "subtitle": "We create digital experiences that sell, scale, and stand out. From startups to enterprises, we turn your vision into a product that delivers results — websites, systems, e-commerces, automations, and SaaS solutions built with precision and speed.",
+      "cta": "→ Let’s build something powerful together."
+    },
+    "whyChoose": {
+      "title": "Why choose Nevora",
+      "points": [
+        "Fast delivery, high-quality code, international standards.",
+        "Minimalist designs that convert.",
+        "Automations and integrations that save time and resources."
+      ]
+    }
+  },
+  "about": {
+    "title": "About Nevora",
+    "description": "We are Nevora — the tech force behind brands that grow. Our mission is simple: deliver cutting-edge software that elevates your business. We combine design, technology, and strategy to craft digital experiences that attract, convert, and retain customers.",
+    "philosophy": "Focused on results, driven by innovation, built for performance.",
+    "extra": {
+      "whoWeAre": "Nevora is the tech partner that turns your ideas into reality.",
+      "ourPhilosophy": "Innovation, performance, and clarity in every line of code.",
+      "ourPromise": "You receive a product that isn’t just functional — it makes an impact."
+    }
+  },
+  "services": {
+    "title": "Services",
+    "description": "What we build:",
+    "items": [
+      "Websites & Landing Pages – Designed to impress, optimized to convert.",
+      "E-commerce Platforms – Scalable, fast, and tailored for sales.",
+      "Custom Systems & SaaS – Business logic transformed into seamless apps.",
+      "Automations & Integrations – Eliminate repetitive tasks and boost efficiency.",
+      "UI/UX Design – Minimal, modern, and user-centered.",
+      "SEO & Performance Optimization – Fast sites easily found online.",
+      "Analytics & Monitoring – Data-driven decisions for higher ROI.",
+      "Maintenance & Support – Keep your product secure and up-to-date."
+    ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "A glimpse of what we’ve built. Each project represents a challenge solved and a business transformed. We don’t just deliver — we elevate.",
+    "cardsPlaceholder": "(This section will later include cards with images, short descriptions, and results.)",
+    "cta": "See more projects →"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Let’s make it happen. Tell us about your idea — we’ll turn it into a product that drives real results.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "details": "Project Details",
+      "button": "Send your idea →"
+    },
+    "social": {
+      "email": "hello@nevora.dev",
+      "instagram": "@nevora.dev",
+      "linkedin": "@nevora",
+      "twitter": "@nevora",
+      "github": "@nevora"
+    }
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "quotes": [
+      "Nevora turned our idea into a real product in record time.",
+      "Working with Nevora was simple and extremely professional.",
+      "The design and development process elevated our brand."
+    ]
+  },
+  "process": {
+    "title": "Our Process",
+    "steps": [
+      "Step 1: Discover & Plan",
+      "Step 2: Design & Develop",
+      "Step 3: Test & Launch",
+      "Step 4: Optimize & Support"
+    ]
+  }
+}

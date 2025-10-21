@@ -1,0 +1,85 @@
+{
+  "navbar": {
+    "navs": ["inicio", "sobre", "serviços", "projetos", "contato"]
+  },
+  "home": {
+    "hero": {
+      "title": "Transformando ideias em dominância do mercado digital.",
+      "subtitle": "Criamos experiências digitais que vendem, escalam e se destacam. De startups a grandes empresas, transformamos sua visão em um produto que entrega resultados — websites, sistemas, e-commerces, automações e soluções SaaS criadas com precisão e agilidade.",
+      "cta": "→ Vamos construir algo poderoso."
+    },
+    "whyChoose": {
+      "title": "Por que escolher a Nevora",
+      "points": [
+        "Entrega rápida, código de alta qualidade, padrões internacionais.",
+        "Designs minimalistas que convertem.",
+        "Automações e integrações que economizam tempo e recursos."
+      ]
+    }
+  },
+  "about": {
+    "title": "Sobre a Nevora",
+    "description": "Somos a Nevora — a força tecnológica por trás de marcas que crescem. Nossa missão é simples: entregar softwares de ponta que elevam o seu negócio. Unimos design, tecnologia e estratégia para criar experiências digitais que atraem, convertem e fidelizam clientes.",
+    "philosophy": "Foco em resultado, movidos por inovação, criados para performance.",
+    "extra": {
+      "whoWeAre": "Nevora é a parceira tecnológica que transforma suas ideias em realidade.",
+      "ourPhilosophy": "Inovação, performance e clareza em cada linha de código.",
+      "ourPromise": "Você recebe um produto que não é apenas funcional — ele gera impacto."
+    }
+  },
+  "services": {
+    "title": "Serviços",
+    "description": "O que construímos:",
+    "items": [
+      "Websites e Landing Pages – Projetados para impressionar, otimizados para converter.",
+      "Plataformas de E-commerce – Escaláveis, rápidas e feitas para vender.",
+      "Sistemas Personalizados e SaaS – A lógica do seu negócio, em forma de app.",
+      "Automações e Integrações – Elimine tarefas repetitivas e aumente a eficiência.",
+      "Design UI/UX – Minimalista, moderno e centrado no usuário.",
+      "SEO & Otimização de Performance – Sites rápidos e facilmente encontrados.",
+      "Analytics & Monitoramento – Decisões baseadas em dados para maior ROI.",
+      "Manutenção & Suporte – Seu produto seguro e atualizado."
+    ]
+  },
+  "portfolio": {
+    "title": "Portfólio",
+    "description": "Um olhar sobre o que já criamos. Cada projeto representa um desafio resolvido e um negócio transformado. Não apenas entregamos — nós elevamos.",
+    "cardsPlaceholder": "(Depois adicionamos cards com imagens, descrições e resultados.)",
+    "cta": "Ver mais projetos →"
+  },
+  "contact": {
+    "title": "Contato",
+    "description": "Vamos fazer acontecer. Conte-nos sobre sua ideia — nós a transformamos em um produto que gera resultados reais.",
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "company": "Empresa",
+      "details": "Detalhes do Projeto",
+      "button": "Envie sua ideia →"
+    },
+    "social": {
+      "email": "hello@nevora.dev",
+      "instagram": "@nevora.dev",
+      "linkedin": "@nevora",
+      "twitter": "@nevora",
+      "github": "@nevora"
+    }
+  },
+  "testimonials": {
+    "title": "Depoimentos",
+    "quotes": [
+      "A Nevora transformou nossa ideia em um produto real em tempo recorde.",
+      "Trabalhar com a Nevora foi simples e extremamente profissional.",
+      "O processo de design e desenvolvimento elevou nossa marca."
+    ]
+  },
+  "process": {
+    "title": "Nosso Processo",
+    "steps": [
+      "Passo 1: Descobrir & Planejar",
+      "Passo 2: Projetar & Desenvolver",
+      "Passo 3: Testar & Lançar",
+      "Passo 4: Otimizar & Suportar"
+    ]
+  }
+}
