@@ -9,16 +9,26 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="flex text-carbon backdrop-blur-md items-center justify-between px-6 py-3 md:px-10 shadow-sm z-100 fixed w-screen">
+    <header className="flex text-snow backdrop-blur-md items-center justify-between px-6 py-3 md:px-10 shadow-sm z-100 fixed w-screen">
       {/* Logo */}
-      <motion.img
-        src="nevora-logo.png"
-        alt="Nevora"
-        className="w-10 h-10"
-        initial={{ opacity: 0, x: -10 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-      />
+      <div className="flex flex-row text-center justify-center items-center gap-2">
+        {" "}
+        <motion.img
+          src="nevora-logo.png"
+          alt="Nevora"
+          className="w-8 h-8"
+          initial={{ opacity: 0, x: -10 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        />
+        <motion.p
+          initial={{ opacity: 0, x: -10 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        >
+          Nevora
+        </motion.p>
+      </div>
 
       {/* Navegação - visível apenas em telas médias pra cima */}
       <motion.nav
@@ -47,7 +57,7 @@ export default function Header() {
 
       {/* Botão mobile */}
       <button
-        className="md:hidden p-2 text-snow z-10"
+        className="md:hidden p-2 text-carbon z-10"
         onClick={() => setOpen(!open)}
       >
         {open ? (
@@ -71,7 +81,7 @@ export default function Header() {
                 <li key={i}>
                   <a
                     href="#"
-                    className="text-snow hover:text-fog transition-colors"
+                    className="text-carbon hover:text-fog transition-colors"
                     onClick={() => setOpen(false)}
                   >
                     {item}
