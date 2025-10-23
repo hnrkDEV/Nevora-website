@@ -38,12 +38,16 @@ export default function Header() {
         transition={{ delay: 0.3, duration: 0.8 }}
       >
         {navbarItens.map((item, i) => (
-          <a key={i} href="#" className="transition-colors">
+          <a
+            key={i}
+            href="#"
+            className="relative group transition-colors text-snow"
+          >
             {item}
+            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-linear-to-r from-gray-500 to-white shadow-[0_0_8px_rgba(251,191,36,0.5)] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></span>
           </a>
         ))}
       </motion.nav>
-
       {/* Botão de idioma */}
       <motion.button
         onClick={toggleLang}
