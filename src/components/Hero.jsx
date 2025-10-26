@@ -3,70 +3,69 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
-  const { t, toggleLang, lang } = useLanguage();
+  const { t, lang } = useLanguage();
 
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-screen bg-carbon text-snow text-center px-4 overflow-hidden">
-      {/* Imagem de fundo - esquerda */}
-      <motion.img
-        src="hero-img-3.png"
-        alt=""
-        initial={{ opacity: 0, scale: 1.05 }}
-        animate={{ opacity: 0.25, scale: 1 }}
-        transition={{ duration: 1 }}
-        className="absolute hidden inset-0 w-full h-full object-contain object-left -left-60 z-0 md:block"
-      />
+    <>
+      {/* Fundo fixo */}
+      <div className="fixed inset-0 -z-10 overflow-hidden">
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src="background.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
 
-      {/* Imagem de fundo - direita */}
-      <motion.img
-        src="hero-img-2.png"
-        alt=""
-        initial={{ opacity: 0, scale: 1.05 }}
-        animate={{ opacity: 0.25, scale: 1 }}
-        transition={{ duration: 1 }}
-        className="absolute hidden inset-0 w-full h-full object-contain object-right z-0 md:block"
-      />
+      {/* Camada de vidro (glassmorphism) */}
+      <div className="fixed inset-0 -z-5 backdrop-blur-lg bg-white/5" />
 
-      {/* Fade inferior para suavizar a transição */}
-      <div className="absolute bottom-0 left-0 w-full h-108 bg-linear-to-b from-transparent to-black z-10 pointer-events-none"></div>
+      {/* Conteúdo fixo centralizado */}
+      <div className="fixed inset-0 flex flex-col items-center justify-center text-snow text-center px-6 pointer-events-none">
+        <div className="pointer-events-auto max-w-5xl mx-auto">
+          {/* Título */}
+          <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+          >
+            <TypeAnimation
+              key={lang}
+              sequence={[t("home.hero.text-animation"), 2000]}
+              speed={50}
+              repeat={Infinity}
+              className="text-4xl md:text-6xl font-normal tracking-tight leading-tight text-white whitespace-pre-line"
+            />
+          </motion.div>
 
-      {/* Headline */}
-      <motion.h1
-        initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-        className="text-7xl md:text-7xl font-bold tracking-tight max-w-3xl leading-tight"
-      >
-        {t("home.hero.title")}
-      </motion.h1>
+          {/* Subtítulo */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="text-fog mt-6 text-lg md:text-xl max-w-3xl mx-auto"
+          >
+            {t("home.hero.subtitle")}
+          </motion.p>
 
-      <TypeAnimation
-        key={lang}
-        sequence={[t("home.hero.text-animation"), 2000]}
-        speed={50}
-        repeat={Infinity}
-        className="text-5xl whitespace-pre-line md:text-6xl font-normal tracking-tight max-w-3xl leading-tight"
-      />
+          {/* Botão principal */}
+          <motion.button
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="mt-10 bg-transparent border border-amber-50 text-snow font-semibold px-8 py-3 rounded-2xl 
+            hover:border-amber-50 hover:bg-white hover:text-black transition cursor-pointer"
+          >
+            {t("home.hero.cta")}
+          </motion.button>
+        </div>
+      </div>
 
-      {/* Subtítulo */}
-      <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-        className="text-fog mt-6 max-w-xl text-lg"
-      >
-        {t("home.hero.subtitle")}
-      </motion.p>
-
-      {/* Botão principal */}
-      <motion.button
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-        className="mt-10 bg-white text-carbon font-semibold px-8 py-3 rounded-2xl hover:border-solid hover:border-amber-50 hover:border delay-75 transition cursor-pointer z-100 hover:scale-105 hover:bg-transparent hover:text-white"
-      >
-        {t("home.hero.cta")}
-      </motion.button>
-    </section>
+      {/* Espaço fantasma para scroll */}
+      <section className="h-screen"></section>
+    </>
   );
 }
