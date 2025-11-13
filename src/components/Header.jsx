@@ -10,7 +10,6 @@ export default function Header() {
 
   return (
     <>
-      {/* === HEADER FLUTUANTE E CENTRAL === */}
       <motion.header
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -21,7 +20,6 @@ export default function Header() {
           backdrop-blur-xl bg-white/10 border border-white/20 shadow-[0_0_25px_rgba(255,255,255,0.08)]
           text-snow"
       >
-        {/* === LOGO === */}
         <div className="flex items-center gap-2">
           <motion.img
             src="nevora-logo.png"
@@ -40,8 +38,6 @@ export default function Header() {
 
           </motion.span>
         </div>
-
-        {/* === NAV DESKTOP === */}
         <nav className="hidden md:flex gap-6 text-sm font-light tracking-wide">
           {navbarItens.map((item, i) => (
             <a
@@ -54,8 +50,6 @@ export default function Header() {
             </a>
           ))}
         </nav>
-
-        {/* === BOTÃO DE IDIOMA (DESKTOP) === */}
         <motion.button
           onClick={toggleLang}
           className="hidden md:block text-sm border border-white/30 px-3 py-1 rounded-full hover:bg-white/10 hover:text-white transition-all"
@@ -63,7 +57,6 @@ export default function Header() {
           {lang === "en" ? "PT" : "EN"}
         </motion.button>
 
-        {/* === BOTÃO MOBILE === */}
         <button
           className="md:hidden p-2 text-snow"
           onClick={() => setOpen(!open)}
@@ -76,7 +69,6 @@ export default function Header() {
         </button>
       </motion.header>
 
-      {/* === MENU MOBILE === */}
       <AnimatePresence>
         {open && (
           <motion.div

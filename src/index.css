@@ -20,12 +20,19 @@
 @layer base {
   body {
     @apply antialiased;
-    background-color: #1a1a1a; /* carbon */
-    color: #f5f5f5; /* snow */
+    background-color: #1a1a1a; 
+    color: #f5f5f5; 
   }
 }
 
-/* Definir utilitários customizados */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 @layer utilities {
   .bg-carbon {
     background-color: #141414;

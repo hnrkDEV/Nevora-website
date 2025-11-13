@@ -1,21 +1,24 @@
 import { LanguageProvider } from "./context/LanguageContext";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
 import Home from "./components/Home";
-import About from "./components/About";
-import BackgroundGlow from "./components/BackgroundGlow"; // ← novo fundo contínuo
+import About from "./components/Aboutt";
+import Services from "./components/Services";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
+import BackgroundGlow from "./components/BackgroundGlow";
 
 function App() {
   return (
     <LanguageProvider>
-      {/* === FUNDO GLOBAL === */}
       <BackgroundGlow />
-
-      {/* === CONTEÚDO DO SITE === */}
       <Header />
-      <Hero />
       <Home />
       <About />
+      <Services />
+      <Portfolio />
+      <Contact/>
+      <Footer/>
     </LanguageProvider>
   );
 }
