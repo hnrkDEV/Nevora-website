@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Home() {
+  const { t } = useLanguage();
+
   return (
     <section
       id="home"
@@ -13,18 +16,17 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="px-6 py-2 rounded-full bg-white/5 backdrop-blur-md border border-white/10 text-sm text-gray-300"
         >
-          Crafting Digital Experiences
+          {t("home.hero.title")}
         </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-5xl md:text-6xl font-light tracking-tight leading-tight"
+          className="text-5xl md:text-6xl font-light tracking-tight leading-tight whitespace-pre-line"
         >
-          We craft digital experiences that blend design, innovation, and code
-          turning ideas into something that <br />
+          {t("home.hero.subtitle1")}{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-[#00fff0] to-[#00bfa6]">
-            feels alive
+            {t("home.hero.highlight")}
           </span>
         </motion.h1>
 
@@ -34,9 +36,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 0.2 }}
           className="text-gray-400 text-lg md:text-xl max-w-2xl leading-relaxed"
         >
-          High-end development, refined design, and intelligent engineering. We
-          transform ideas into beautiful, scalable, and high-performance digital
-          products.
+          {t("home.hero.subtitle2")}
         </motion.p>
 
         <motion.div
@@ -49,13 +49,13 @@ export default function Home() {
             href="#services"
             className="px-10 py-3 rounded-full bg-linear-to-r from-[#00fff0] to-[#00bfa6] text-black font-medium shadow-lg hover:shadow-[0_0_25px_#00fff0b3] transition-all"
           >
-            Explore Services
+            {t("home.hero.cta")}
           </a>
           <a
             href="#projects"
             className="px-10 py-3 rounded-full border border-[#00fff0]/50 text-[#00fff0] font-medium hover:bg-[#00fff0]/10 transition-all"
           >
-            View Projects
+            {t("home.hero.secondaryCta")}
           </a>
         </motion.div>
       </div>

@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function About() {
+  const { t } = useLanguage();
   return (
     <section
       id="about"
@@ -17,26 +19,17 @@ export default function About() {
         >
           <h2 className="text-4xl md:text-5xl font-light mb-8 leading-snug tracking-tight">
             <span className="text-transparent bg-clip-text bg-linear-to-r from-[#00fff0] to-[#00bfa6] font-semibold">
-              Nevora Labs
+              {t("home.about.titleHighlight")}
             </span>
             <br />
-            <span className="text-white/90 font-light">
-              Engineering Digital Futures
+            <span className="text-white/90 font-light w-fit">
+              {t("home.about.title")}
             </span>
           </h2>
 
-          <div className="space-y-6 text-gray-400 text-base leading-relaxed max-w-xl">
+          <div className="space-y-6 text-gray-400 text-base leading-relaxed max-w-xl whitespace-pre-line">
             <p>
-              Nevora is a technology company specializing in the development of
-              web and mobile applications, modern interfaces, and digital
-              solutions. We combine design, innovation, and software engineering
-              to turn ideas into real, high-performance products.
-            </p>
-            <p>
-              From concept to final delivery, we craft intuitive, secure, and
-              scalable experiences, offering integrations, automations, and
-              consulting that raise the digital standard of companies and
-              professionals worldwide.
+              {t("home.about.paragraphs")}
             </p>
           </div>
 
@@ -48,7 +41,7 @@ export default function About() {
               className="px-8 py-3 rounded-full bg-linear-to-r from-[#00fff0] to-[#00bfa6] text-black 
                          font-medium shadow-lg hover:shadow-[0_0_25px_#00fff0b3] transition-all"
             >
-              Explore Services
+              {t("home.about.ctaPrimary")}
             </motion.a>
 
             <motion.a
@@ -58,7 +51,7 @@ export default function About() {
               className="px-8 py-3 rounded-full border border-[#00fff0]/50 text-[#00fff0] font-medium 
                          hover:bg-[#00fff0]/10 transition-all"
             >
-              View Projects
+              {t("home.about.ctaSecondary")}
             </motion.a>
           </div>
         </motion.div>

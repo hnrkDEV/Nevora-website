@@ -1,88 +1,231 @@
 {
   "navbar": {
-    "navs": ["inicio", "sobre", "serviços", "projetos", "contato"]
+    "navs": [
+      "inicio",
+      "sobre",
+      "serviços",
+      "projetos",
+      "contato"
+    ],
+    "links": [
+      "#home",
+      "#about",
+      "#services",
+      "#portfolio",
+      "#contact"
+    ]
   },
   "home": {
     "hero": {
-      "title": "Nevora.\n",
-      "text-animation": "Transformando ideias em dominância do mercado digital.",
-      "subtitle": "Criamos experiências digitais que vendem, escalam e se destacam. De startups a grandes empresas, transformamos sua visão em um produto que entrega resultados — websites, sistemas, e-commerces, automações e soluções SaaS criadas com precisão e agilidade.",
-      "cta": "Vamos construir algo poderoso juntos. →",
-      "navigate": "Conferir →",
-      "check-prices": "Confira nossos\n preços e planos"
+      "title": "Construindo Experiências Digitais",
+      "subtitle1": "Criamos experiências que combinam design, inovação e engenharia para transformar ideias em soluções",
+      "highlight": "\n escaláveis e eficientes.",
+      "subtitle2": "Desenvolvimento de ponta, design refinado e engenharia inteligente. Transformamos ideias em produtos digitais belos, escaláveis ​​e de alto desempenho.",
+      "cta": "Explorar Serviços",
+      "secondaryCta": "Ver Projetos →"
     },
-    "whyChoose": {
-      "title": "Por que escolher a Nevora",
-      "points": [
-        "Entrega rápida, código de alta qualidade, padrões internacionais.",
-        "Designs minimalistas que convertem.",
-        "Automações e integrações que economizam tempo e recursos."
-      ]
-    }
-  },
-  "about": {
-    "title": "Sobre a Nevora",
-    "description": "Somos a Nevora — a força tecnológica por trás de marcas que crescem. Nossa missão é simples: entregar softwares de ponta que elevam o seu negócio. Unimos design, tecnologia e estratégia para criar experiências digitais que atraem, convertem e fidelizam clientes.",
-    "philosophy": "Foco em resultado, movidos por inovação, criados para performance.",
-    "extra": {
-      "whoWeAre": "Nevora é a parceira tecnológica que transforma suas ideias em realidade.",
-      "ourPhilosophy": "Inovação, performance e clareza em cada linha de código.",
-      "ourPromise": "Você recebe um produto que não é apenas funcional — ele gera impacto."
+    "about": {
+      "titleHighlight": "Nevora",
+      "title": "Desenvolvendo o Futuro Digital",
+      "paragraphs": [
+        "A Nevora é uma empresa de tecnologia especializada no desenvolvimento de aplicações web e mobile, interfaces modernas e soluções digitais. Unimos design, inovação e engenharia de software para transformar ideias em produtos bem construidos e de alta qualidade. \n \n",
+        "Do conceito à entrega final, criamos experiências intuitivas, seguras e modernas, oferecendo integracoes, automacoes e consultoria que elevam o padrao digital de empresas e profissionais no mundo todo."
+      ],
+      "ctaPrimary": "Explorar Serviços",
+      "ctaSecondary": "Ver Projetos"
     }
   },
   "services": {
-    "title": "Serviços",
-    "description": "O que construímos:",
-    "items": [
-      "Websites e Landing Pages – Projetados para impressionar, otimizados para converter.",
-      "Plataformas de E-commerce – Escaláveis, rápidas e feitas para vender.",
-      "Sistemas Personalizados e SaaS – A lógica do seu negócio, em forma de app.",
-      "Automações e Integrações – Elimine tarefas repetitivas e aumente a eficiência.",
-      "Design UI/UX – Minimalista, moderno e centrado no usuário.",
-      "SEO & Otimização de Performance – Sites rápidos e facilmente encontrados.",
-      "Analytics & Monitoramento – Decisões baseadas em dados para maior ROI.",
-      "Manutenção & Suporte – Seu produto seguro e atualizado."
+    "hero": {
+      "title": "Nevora",
+      "highlight": "Serviços Premium"
+    },
+    "cards": [
+      {
+        "title": "Automação de Processos & Integrações",
+        "desc": "Conectamos suas ferramentas e sistemas internos, automatizando fluxos que economizam tempo e reduzem erros manuais.",
+        "value": "Economiza horas de trabalho manual e aumenta a produtividade."
+      },
+      {
+        "title": "Consultoria Técnica & Code Review",
+        "desc": "Analisamos e otimizamos seu código existente para melhorar desempenho, segurança e escalabilidade.",
+        "value": "Confiança, estabilidade e melhoria contínua."
+      },
+      {
+        "title": "Dashboards & Visualização de Dados",
+        "desc": "Transformamos dados complexos em dashboards claros e interativos que impulsionam decisões estratégicas.",
+        "value": "Decisões mais rápidas e orientadas por dados."
+      },
+      {
+        "title": "Prototipagem Rápida / MVP",
+        "desc": "Desenvolvemos protótipos funcionais ou MVPs para validar ideias rapidamente, economizando tempo e dinheiro.",
+        "value": "Validação rápida e protótipos prontos para investidores."
+      },
+      {
+        "title": "Pacotes Growth Tech",
+        "desc": "Pacotes estratégicos combinando automação, dashboards e relatórios — soluções prontas para escalar.",
+        "value": "Um sistema completo que acelera o crescimento."
+      },
+      {
+        "title": "Desenvolvimento de Aplicativos Mobile",
+        "desc": "Criamos apps mobile de alta performance para iOS e Android — usando frameworks modernos e UX impecável.",
+        "value": "Alcance seu público em qualquer lugar, com apps que combinam design, performance e escalabilidade."
+      }
+    ],
+    "quote": {
+      "text": "Construímos sistemas digitais que funcionam como organismos vivos: inteligentes, adaptativos e feitos para crescer.",
+      "subtext": "De automações a analytics, cada projeto é criado para evoluir com o seu negócio — rápido, elegante e confiável."
+    },
+    "buttons": {
+      "viewProjects": "Ver Projetos",
+      "contactUs": "Fale Conosco"
+    },
+    "metrics": [
+      {
+        "value": "50+",
+        "label": "Projetos Entregues"
+      },
+      {
+        "value": "8+",
+        "label": "Tecnologias Utilizadas"
+      },
+      {
+        "value": "10k+",
+        "label": "Linhas de Código"
+      },
+      {
+        "value": "100%",
+        "label": "Satisfação dos Clientes"
+      }
     ]
   },
   "portfolio": {
-    "title": "Portfólio",
-    "description": "Um olhar sobre o que já criamos. Cada projeto representa um desafio resolvido e um negócio transformado. Não apenas entregamos — nós elevamos.",
-    "cardsPlaceholder": "(Depois adicionamos cards com imagens, descrições e resultados.)",
-    "cta": "Ver mais projetos →"
+    "title": "Nossos",
+    "highlight": "Projetos",
+    "subtitle": "Uma vitrine de plataformas modernas, dashboards, automações e interfaces desenvolvidas com engenharia e UI premium.",
+    "button": "Ver Projeto →",
+    "projects": [
+      {
+        "title": "Rhally — Plataforma de RH",
+        "desc": "Um ecossistema completo de RH com módulos de ponto, admissões, benefícios e recrutamento.",
+        "image": "/projects/rhally.png",
+        "tech": [
+          "React",
+          "Node.js",
+          "MySQL"
+        ]
+      },
+      {
+        "title": "MaisRH — Portal de Vagas",
+        "desc": "Portal de vagas moderno com dashboards, área do candidato e gestão corporativa.",
+        "image": "/projects/maisrh.png",
+        "tech": [
+          "React",
+          "Express",
+          "PostgreSQL"
+        ]
+      },
+      {
+        "title": "Nevora Landing Page",
+        "desc": "Landing page premium inspirada em Webflow, com animações modernas e UI refinada.",
+        "image": "/projects/nevora.png",
+        "tech": [
+          "React",
+          "AOS",
+          "Framer Motion"
+        ]
+      },
+      {
+        "title": "EcoDashboard — Analytics",
+        "desc": "Dashboard de analytics em tempo real com gráficos interativos e KPIs.",
+        "image": "/projects/ecodashboard.png",
+        "tech": [
+          "React",
+          "Recharts",
+          "Node.js"
+        ]
+      },
+      {
+        "title": "Consulta SERPRO",
+        "desc": "Sistema seguro integrado a operações governamentais usando APIs do SERPRO.",
+        "image": "/projects/serpro.png",
+        "tech": [
+          "Django",
+          "Celery",
+          "PostgreSQL"
+        ]
+      },
+      {
+        "title": "IASSEPE Intranet",
+        "desc": "Intranet corporativa para comunicação, eventos e integração de sistemas.",
+        "image": "/projects/intranet.png",
+        "tech": [
+          "React",
+          "Node.js",
+          "JWT"
+        ]
+      },
+      {
+        "title": "Nevora AI Assistant",
+        "desc": "Solução de IA para automação de fluxos e gestão de conhecimento organizacional.",
+        "image": "/projects/assistant.png",
+        "tech": [
+          "Python",
+          "OpenAI",
+          "FastAPI"
+        ]
+      },
+      {
+        "title": "GGP Mentoria",
+        "desc": "Plataforma para mentorias, branding pessoal e gestão de conteúdos.",
+        "image": "/projects/ggp.png",
+        "tech": [
+          "React",
+          "Tailwind",
+          "AOS"
+        ]
+      },
+      {
+        "title": "COFASMI Green System",
+        "desc": "Sistema para gestão de colheitas, cooperativas e distribuição de alimentos.",
+        "image": "/projects/cofasmi.png",
+        "tech": [
+          "React",
+          "Node.js",
+          "MySQL"
+        ]
+      }
+    ]
   },
   "contact": {
-    "title": "Contato",
-    "description": "Vamos fazer acontecer. Conte-nos sobre sua ideia — nós a transformamos em um produto que gera resultados reais.",
+    "title": "Vamos construir algo",
+    "highlight": "incrível juntos.",
+    "subtitle": "Seja um site moderno, um sistema completo ou um protótipo perfeito — estamos aqui para transformar suas ideias em experiências digitais de alta qualidade.",
+    "social": "Encontre-nos em:",
+    "whatsapp": "Fale conosco no WhatsApp",
     "form": {
-      "name": "Nome",
-      "email": "Email",
-      "company": "Empresa",
-      "details": "Detalhes do Projeto",
-      "button": "Envie sua ideia →"
-    },
-    "social": {
-      "email": "hello@nevora.dev",
-      "instagram": "@nevora.dev",
-      "linkedin": "@nevora",
-      "twitter": "@nevora",
-      "github": "@nevora"
+      "nameLabel": "Seu Nome",
+      "namePlaceholder": "João Silva",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "joao@email.com",
+      "messageLabel": "Mensagem",
+      "messagePlaceholder": "Conte mais sobre o seu projeto...",
+      "submit": "Enviar Mensagem"
     }
   },
-  "testimonials": {
-    "title": "Depoimentos",
-    "quotes": [
-      "A Nevora transformou nossa ideia em um produto real em tempo recorde.",
-      "Trabalhar com a Nevora foi simples e extremamente profissional.",
-      "O processo de design e desenvolvimento elevou nossa marca."
-    ]
-  },
-  "process": {
-    "title": "Nosso Processo",
-    "steps": [
-      "Passo 1: Descobrir & Planejar",
-      "Passo 2: Projetar & Desenvolver",
-      "Passo 3: Testar & Lançar",
-      "Passo 4: Otimizar & Suportar"
-    ]
+  "footer": {
+    "description": "Criando experiências digitais premium através de design, inovação e engenharia moderna.",
+    "navigation": "Navegação",
+    "navLinks": {
+      "home": "Início",
+      "about": "Sobre",
+      "services": "Serviços",
+      "portfolio": "Portfólio",
+      "contact": "Contato"
+    },
+    "talkTitle": "Vamos conversar",
+    "talkDescription": "Precisa de um projeto, redesign ou parceria? Respondemos em poucos minutos.",
+    "whatsapp": "WhatsApp →",
+    "rights": "Todos os direitos reservados."
   }
 }

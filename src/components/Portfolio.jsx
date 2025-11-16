@@ -1,12 +1,17 @@
 import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Portfolio() {
+  const { t } = useLanguage();
+
+  const projects = t("portfolio.projects", { returnObjects: true });
+
   const [index, setIndex] = useState(0);
   const cardRef = useRef(null);
-  const [cardWidth, setCardWidth] = useState(390); 
-  const projectsLength = projects.length;
+  const [cardWidth, setCardWidth] = useState(390);
 
+  const projectsLength = projects.length;
   const infiniteProjects = [...projects, ...projects, ...projects];
 
   useEffect(() => {
@@ -24,7 +29,7 @@ export default function Portfolio() {
 
   useEffect(() => {
     setIndex(projectsLength);
-  }, []);
+  }, [projectsLength]);
 
   const next = () => setIndex((prev) => prev + 1);
   const prev = () => setIndex((prev) => prev - 1);
@@ -36,7 +41,8 @@ export default function Portfolio() {
     if (index <= projectsLength - 1) {
       setTimeout(() => setIndex(projectsLength * 2 - 1), 50);
     }
-  }, [index]);
+  }, [index, projectsLength]);
+
   const handleDragEnd = (_, info) => {
     if (info.offset.x < -40) next();
     if (info.offset.x > 40) prev();
@@ -47,18 +53,19 @@ export default function Portfolio() {
       id="portfolio"
       className="relative w-full flex flex-col items-center py-40 text-gray-100 overflow-hidden"
     >
+      {/* TITLE */}
       <h2 className="text-4xl md:text-5xl font-light text-center">
-        Our{" "}
+        {t("portfolio.title")}{" "}
         <span className="text-transparent bg-clip-text bg-linear-to-r from-[#00fff0] to-[#00bfa6]">
-          Projects
+          {t("portfolio.highlight")}
         </span>
       </h2>
 
       <p className="text-gray-400 text-center max-w-2xl mt-6 mb-16 leading-relaxed">
-        A showcase of modern platforms, dashboards, automations and interfaces
-        crafted with engineering and premium UI.
+        {t("portfolio.subtitle")}
       </p>
 
+      {/* CONTROLS */}
       <button
         onClick={prev}
         className="hidden md:flex absolute left-6 top-1/2 -translate-y-1/2 z-30
@@ -78,7 +85,7 @@ export default function Portfolio() {
       </button>
 
       {/* SLIDER */}
-      <div className="w-full overflow-hidden px-4 md:px-10 select-none relative">
+      <div className="w-full overflow-hidden px-4 md:px-10 select-none relative pt-10">
         <motion.div
           className="flex gap-10"
           animate={{ x: -index * cardWidth }}
@@ -94,7 +101,7 @@ export default function Portfolio() {
               key={i}
               whileHover={{
                 y: -10,
-                boxShadow: "0 0 30px rgba(0,255,240,0.15)",
+                boxShadow: "0 0 30px rgba(0,255,240,0.15)"
               }}
               className="min-w-[85vw] sm:min-w-[350px] max-w-[350px] 
                          bg-white/5 backdrop-blur-xl border border-white/10 
@@ -115,13 +122,13 @@ export default function Portfolio() {
                 <p className="text-sm text-gray-300 mb-4">{p.desc}</p>
 
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {p.tech.map((t, idx) => (
+                  {p.tech.map((tech, idx) => (
                     <span
                       key={idx}
                       className="px-3 py-1 text-xs bg-white/10 border border-white/10 
                                  rounded-full text-gray-300"
                     >
-                      {t}
+                      {tech}
                     </span>
                   ))}
                 </div>
@@ -131,7 +138,7 @@ export default function Portfolio() {
                   className="block px-6 py-2 text-center rounded-full border border-[#00fff0]/40 
                              text-[#00fff0] hover:bg-[#00fff0]/10 transition"
                 >
-                  View Project →
+                  {t("portfolio.button")}
                 </a>
               </div>
             </motion.div>
@@ -141,60 +148,3 @@ export default function Portfolio() {
     </section>
   );
 }
-
-const projects = [
-  {
-    title: "Rhally — HR Platform",
-    desc: "A complete HR ecosystem with attendance, onboarding, benefits, and recruitment modules.",
-    image: "/projects/rhally.png",
-    tech: ["React", "Node.js", "MySQL"],
-  },
-  {
-    title: "MaisRH — Recruitment Portal",
-    desc: "Modern job portal with dashboards, candidate area and business management.",
-    image: "/projects/maisrh.png",
-    tech: ["React", "Express", "PostgreSQL"],
-  },
-  {
-    title: "Nevora Landing Page",
-    desc: "High-end landing inspired by Webflow, modern motion and premium UI.",
-    image: "/projects/nevora.png",
-    tech: ["React", "AOS", "Framer Motion"],
-  },
-  {
-    title: "EcoDashboard — Analytics",
-    desc: "Real-time analytics dashboard with interactive charts and KPI insights.",
-    image: "/projects/ecodashboard.png",
-    tech: ["React", "Recharts", "Node.js"],
-  },
-  {
-    title: "Consulta SERPRO",
-    desc: "Secure system integrating government operations with SERPRO APIs.",
-    image: "/projects/serpro.png",
-    tech: ["Django", "Celery", "PostgreSQL"],
-  },
-  {
-    title: "IASSEPE Intranet",
-    desc: "Corporate intranet for communication, events and systems integration.",
-    image: "/projects/intranet.png",
-    tech: ["React", "Node.js", "JWT"],
-  },
-  {
-    title: "Nevora AI Assistant",
-    desc: "AI solution for automated workflows and organizational knowledge.",
-    image: "/projects/assistant.png",
-    tech: ["Python", "OpenAI", "FastAPI"],
-  },
-  {
-    title: "GGP Mentoria",
-    desc: "Platform for mentorship, personal branding and content management.",
-    image: "/projects/ggp.png",
-    tech: ["React", "Tailwind", "AOS"],
-  },
-  {
-    title: "COFASMI Green System",
-    desc: "System to manage harvests, cooperatives and food distribution.",
-    image: "/projects/cofasmi.png",
-    tech: ["React", "Node.js", "MySQL"],
-  },
-];

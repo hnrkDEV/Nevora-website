@@ -2,10 +2,13 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import ReactCountryFlag from "react-country-flag";
+
 
 export default function Header() {
   const { t, toggleLang, lang } = useLanguage();
   const navbarItens = t("navbar.navs", { returnObjects: true });
+  const navbarLinks = t("navbar.links", { returnObjects: true });
   const [open, setOpen] = useState(false);
 
   return (
@@ -42,7 +45,7 @@ export default function Header() {
           {navbarItens.map((item, i) => (
             <a
               key={i}
-              href="#"
+              href={navbarLinks[i]}
               className="relative group text-snow transition-all duration-300"
             >
               {item}
@@ -52,9 +55,9 @@ export default function Header() {
         </nav>
         <motion.button
           onClick={toggleLang}
-          className="hidden md:block text-sm border border-white/30 px-3 py-1 rounded-full hover:bg-white/10 hover:text-white transition-all"
+          className="hidden md:block text-sm border border-white/30 px-3 py-1 rounded-full hover:bg-white/10 hover:text-white transition-all hover:cursor-pointer"
         >
-          {lang === "en" ? "PT" : "EN"}
+          {lang === "en" ? <ReactCountryFlag countryCode="BR" svg style={{ width: "1em", height: "1em", marginTop: "-5px" }} /> : <ReactCountryFlag countryCode="US" svg style={{ width: "1em", height: "1em", marginTop: "-5px" }} />}
         </motion.button>
 
         <button
@@ -94,7 +97,7 @@ export default function Header() {
                 onClick={toggleLang}
                 className="text-sm border border-white/30 px-3 py-1 rounded-full hover:bg-white/10"
               >
-                {lang === "en" ? "PT" : "EN"}
+                {lang === "en" ? <ReactCountryFlag countryCode="BR" svg style={{ width: "1em", height: "1em", marginTop: "-5px" }} /> : <ReactCountryFlag countryCode="US" svg style={{ width: "1em", height: "1em", marginTop: "-5px" }} />}
               </button>
             </ul>
           </motion.div>

@@ -1,7 +1,7 @@
 import { LanguageProvider } from "./context/LanguageContext";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import About from "./components/Aboutt";
+import About from "./components/About";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact"
@@ -17,8 +17,8 @@ function App() {
       <About />
       <Services />
       <Portfolio />
-      <Contact/>
-      <Footer/>
+      <Contact />
+      <Footer />
     </LanguageProvider>
   );
 }
