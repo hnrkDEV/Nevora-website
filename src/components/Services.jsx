@@ -8,8 +8,10 @@ export default function Services() {
   const metrics = t("services.metrics", { returnObjects: true });
 
   return (
-    <section id="services" className="relative flex flex-col items-center justify-center py-20 px-6 md:px-20 text-gray-100 z-20 -mt-32 pt-25">
-
+    <section
+      id="services"
+      className="relative flex flex-col items-center justify-center py-20 px-6 md:px-20 text-gray-100 z-20 -mt-32 pt-25"
+    >
       {/* Título */}
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
@@ -69,7 +71,7 @@ export default function Services() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="max-w-3xl text-center mb-20"
+        className="max-w-3xl text-center mb-10"
       >
         <h3 className="text-3xl md:text-4xl font-light text-white/90 mb-6">
           {t("services.quote.text")}
@@ -87,19 +89,10 @@ export default function Services() {
         className="flex flex-wrap justify-center gap-6 mb-24"
       >
         <motion.a
-          href="#projects"
-          whileHover={{ scale: 1.05 }}
-          transition={{ type: "spring", stiffness: 200, damping: 15 }}
-          className="px-8 py-3 rounded-full bg-linear-to-r from-[#00fff0] to-[#00bfa6] text-black font-medium shadow-lg hover:shadow-[0_0_25px_#00fff0b3] transition-all"
-        >
-          {t("services.buttons.viewProjects")}
-        </motion.a>
-
-        <motion.a
           href="#contact"
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 200, damping: 15 }}
-          className="px-8 py-3 rounded-full border border-[#00fff0]/50 text-[#00fff0] font-medium hover:bg-[#00fff0]/10 transition-all"
+          className="px-8 py-3 rounded-full bg-linear-to-r from-[#00fff0] to-[#00bfa6] text-black font-medium shadow-lg hover:shadow-[0_0_25px_#00fff0b3] transition-all"
         >
           {t("services.buttons.contactUs")}
         </motion.a>
@@ -124,7 +117,6 @@ export default function Services() {
           </motion.div>
         ))}
       </div>
-
     </section>
   );
 }

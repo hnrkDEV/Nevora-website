@@ -1,19 +1,7 @@
 {
   "navbar": {
-    "navs": [
-      "inicio",
-      "sobre",
-      "serviços",
-      "projetos",
-      "contato"
-    ],
-    "links": [
-      "#home",
-      "#about",
-      "#services",
-      "#portfolio",
-      "#contact"
-    ]
+    "navs": ["inicio", "sobre", "serviços", "projetos", "contato"],
+    "links": ["#home", "#about", "#services", "#portfolio", "#contact"]
   },
   "home": {
     "hero": {
@@ -107,93 +95,57 @@
     "projects": [
       {
         "title": "Rhally — Plataforma de RH",
-        "desc": "Um ecossistema completo de RH com módulos de ponto, admissões, benefícios e recrutamento.",
-        "image": "/projects/rhally.png",
-        "tech": [
-          "React",
-          "Node.js",
-          "MySQL"
-        ]
+        "desc": "Sistema completo de gestão de recursos humanos desenvolvido para otimizar rotinas empresariais. Inclui módulos integrados de ponto eletrônico, admissões, benefícios e recrutamento, permitindo uma administração centralizada, moderna e eficiente. A arquitetura combina React, Node.js e MySQL, garantindo escalabilidade e alta performance.",
+        "image": "/rhally.com.br_.png",
+        "tech": ["React", "Node.js", "MySQL"]
       },
       {
-        "title": "MaisRH — Portal de Vagas",
-        "desc": "Portal de vagas moderno com dashboards, área do candidato e gestão corporativa.",
-        "image": "/projects/maisrh.png",
-        "tech": [
-          "React",
-          "Express",
-          "PostgreSQL"
-        ]
+        "title": "AgilizaBPO — Página de Briefing",
+        "desc": "Landing page estratégica voltada à captação de leads e qualificação de empresas interessadas em serviços de BPO. O sistema processa formulários de briefing automatizados e integra dados ao backend, facilitando o fluxo comercial. Desenvolvido em React com backend Express e persistência MySQL, priorizando leveza e eficiência.",
+        "image": "/briefing.agilizabpo.com.br_.png",
+        "tech": ["React", "Express", "MySQL"]
       },
       {
-        "title": "Nevora Landing Page",
-        "desc": "Landing page premium inspirada em Webflow, com animações modernas e UI refinada.",
-        "image": "/projects/nevora.png",
-        "tech": [
-          "React",
-          "AOS",
-          "Framer Motion"
-        ]
+        "title": "CSC RedeGess",
+        "desc": "Aplicação web para centralização de solicitações de serviços terceirizados dentro do CSC RedeGess. O sistema proporciona agilidade no envio e acompanhamento de requisições internas, com uma interface fluida e animações suaves criadas com Framer Motion e AOS. Foco em experiência do usuário e clareza no fluxo operacional.",
+        "image": "/csc.redegess.com.br_.png",
+        "tech": ["React", "AOS", "Framer Motion"]
       },
       {
-        "title": "EcoDashboard — Analytics",
-        "desc": "Dashboard de analytics em tempo real com gráficos interativos e KPIs.",
-        "image": "/projects/ecodashboard.png",
-        "tech": [
-          "React",
-          "Recharts",
-          "Node.js"
-        ]
+        "title": "MaisRH — Website",
+        "desc": "Portal corporativo da empresa MaisRH, desenvolvido para otimizar a comunicação com clientes e o envio de documentos. O projeto utiliza React no front-end, Node.js no backend e MongoDB para armazenamento de dados, oferecendo uma estrutura moderna e segura de acesso a informações e atualizações em tempo real.",
+        "image": "/maisRHwebsite.jpeg",
+        "tech": ["React", "MongoDB", "Node.js"]
       },
       {
-        "title": "Consulta SERPRO",
-        "desc": "Sistema seguro integrado a operações governamentais usando APIs do SERPRO.",
-        "image": "/projects/serpro.png",
-        "tech": [
-          "Django",
-          "Celery",
-          "PostgreSQL"
-        ]
+        "title": "Lustria E-commerce",
+        "desc": "Plataforma de e-commerce voltada à venda de plantas e itens de jardinagem, com foco em design limpo e experiência de compra intuitiva. Implementa catálogo dinâmico, carrinho persistente e integração com APIs de pagamento. Construída em React e Node.js com banco MongoDB, priorizando desempenho e SEO otimizado.",
+        "image": "/Lustria.jpeg",
+        "tech": ["React", "Node.js", "MongoDB"]
       },
       {
-        "title": "IASSEPE Intranet",
-        "desc": "Intranet corporativa para comunicação, eventos e integração de sistemas.",
-        "image": "/projects/intranet.png",
-        "tech": [
-          "React",
-          "Node.js",
-          "JWT"
-        ]
+        "title": "Site de Ebook do Cliente",
+        "desc": "Landing page interativa para divulgação e venda de e-books, com foco em captação de leads e conversão. O sistema foi desenvolvido com React e animações sutis em Framer Motion, garantindo fluidez visual e performance. Integrações backend em Node.js permitem controle de formulários e gestão de leads.",
+        "image": "/Ebook.jpeg",
+        "tech": ["React", "Framer Motion", "Node.js"]
       },
       {
-        "title": "Nevora AI Assistant",
-        "desc": "Solução de IA para automação de fluxos e gestão de conhecimento organizacional.",
-        "image": "/projects/assistant.png",
-        "tech": [
-          "Python",
-          "OpenAI",
-          "FastAPI"
-        ]
+        "title": "Rhally Mobile",
+        "desc": "Versão mobile da plataforma de RH Rhally, desenvolvida com React Native e backend Node.js. O aplicativo oferece funcionalidades de ponto eletrônico, acompanhamento de benefícios e gestão de admissões diretamente pelo smartphone, com sincronização em tempo real via API REST e interface adaptada para Android e iOS.",
+        "image": "/rhallyMobile.png",
+        "tech": ["React Native", "Node.js", "MySQL"]
       },
       {
-        "title": "GGP Mentoria",
-        "desc": "Plataforma para mentorias, branding pessoal e gestão de conteúdos.",
-        "image": "/projects/ggp.png",
-        "tech": [
-          "React",
-          "Tailwind",
-          "AOS"
-        ]
+        "title": "MovieFlix",
+        "desc": "Aplicativo web de catálogo e visualização de filmes e séries, inspirado em plataformas de streaming. Desenvolvido com React e estilizado com Tailwind, utiliza AOS para efeitos de entrada e uma arquitetura voltada à performance e experiência de navegação fluida. Ideal para demonstração de integração com APIs públicas.",
+        "image": "/MovieFlix.jpeg",
+        "tech": ["React", "Tailwind", "AOS"]
       },
       {
-        "title": "COFASMI Green System",
-        "desc": "Sistema para gestão de colheitas, cooperativas e distribuição de alimentos.",
-        "image": "/projects/cofasmi.png",
-        "tech": [
-          "React",
-          "Node.js",
-          "MySQL"
-        ]
+        "title": "AgilizaBPO — Website",
+        "desc": "Website institucional moderno da AgilizaBPO, desenvolvido para fortalecer a presença digital da marca e facilitar o relacionamento com empresas parceiras. Apresenta design responsivo, animações leves e backend Node.js integrado ao banco MySQL, garantindo velocidade, estabilidade e gestão otimizada de conteúdo.",
+        "image": "/AgilizaBPO.jpeg",
+        "tech": ["React", "Node.js", "MySQL"]
       }
     ]
   },
@@ -210,7 +162,10 @@
       "emailPlaceholder": "joao@email.com",
       "messageLabel": "Mensagem",
       "messagePlaceholder": "Conte mais sobre o seu projeto...",
-      "submit": "Enviar Mensagem"
+      "submit": "Enviar Mensagem",
+      "success": "Enviada com sucesso!",
+      "sending": "Enviando...",
+      "error": "Erro ao enviar."
     }
   },
   "footer": {

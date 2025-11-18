@@ -1,14 +1,60 @@
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { FaInstagram, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import { toast } from "react-toastify";
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaEnvelope,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { useLanguage } from "../context/LanguageContext";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const { t } = useLanguage();
+  const form = useRef();
+  const [status, setStatus] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setStatus("sending");
+
+    emailjs
+      .sendForm(
+        "service_7bhxbfj",
+        "template_tatd9xq",
+        form.current,
+        "zy9f2zG928YTuhczt"
+      )
+      .then(
+        () => {
+          setStatus("success");
+          toast.success(t("contact.form.success"), {
+            style: {
+              background: "#0e1113",
+              color: "#eaeaea",
+              border: "1px solid #00bfa6",
+              borderRadius: "10px",
+            },
+          });
+          form.current.reset();
+          setTimeout(() => {
+            setStatus("");
+          }, 2000);
+        },
+        (error) => {
+          console.error("EmailJS Error:", error);
+          setStatus("error");
+          setTimeout(() => {
+            setStatus("");
+          }, 2000);
+        }
+      );
+  };
 
   return (
     <section id="contact" className="w-full px-6 md:px-20 py-32 text-gray-100">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-
         {/* LEFT SIDE */}
         <div className="flex flex-col gap-8">
           <motion.h2
@@ -30,14 +76,14 @@ export default function Contact() {
           {/* Social Icons */}
           <div className="flex gap-5 mt-2">
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/nevora.dev/"
               target="_blank"
               className="text-gray-400 hover:text-[#00fff0] text-2xl transition"
             >
               <FaInstagram />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/nevora-lab/"
               target="_blank"
               className="text-gray-400 hover:text-[#00fff0] text-2xl transition"
             >
@@ -46,6 +92,7 @@ export default function Contact() {
             <a
               href="mailto:business@nevoralabs.com?subject=Contato%20-%20Nevora&body=Ol%C3%A1,%20tenho%20interesse%20em%20um%20projeto."
               className="text-gray-400 hover:text-[#00fff0] text-2xl transition"
+              target="_blank"
             >
               <FaEnvelope />
             </a>
@@ -67,6 +114,8 @@ export default function Contact() {
 
         {/* FORM */}
         <motion.form
+          ref={form}
+          onSubmit={sendEmail}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
@@ -80,6 +129,8 @@ export default function Contact() {
             </label>
             <input
               type="text"
+              name="name"
+              required
               className="bg-white/5 border border-white/20 rounded-xl p-3 
                          text-gray-100 focus:outline-none focus:border-[#00fff0]
                          transition placeholder:text-gray-500 placeholder:italic"
@@ -94,6 +145,8 @@ export default function Contact() {
             </label>
             <input
               type="email"
+              name="email"
+              required
               className="bg-white/5 border border-white/20 rounded-xl p-3 
                          text-gray-100 focus:outline-none focus:border-[#00bfa6]
                          transition placeholder:text-gray-500 placeholder:italic"
@@ -107,7 +160,9 @@ export default function Contact() {
               {t("contact.form.messageLabel")}
             </label>
             <textarea
+              name="message"
               rows="5"
+              required
               className="bg-white/5 border border-white/20 rounded-xl p-3 
                          text-gray-100 focus:outline-none focus:border-[#00fff0]
                          transition resize-none placeholder:text-gray-500 placeholder:italic"
@@ -118,14 +173,20 @@ export default function Contact() {
           {/* Submit */}
           <button
             type="submit"
+            disabled={status === "sending"}
             className="mt-4 bg-linear-to-r from-[#00fff0] to-[#00bfa6] 
                        text-gray-900 font-semibold rounded-full px-6 py-3 
                        hover:opacity-90 transition shadow-xl hover:cursor-pointer"
           >
-            {t("contact.form.submit")}
+            {status === "sending"
+              ? t("contact.form.sending")
+              : status === "success"
+              ? t("contact.form.success")
+              : status === "error"
+              ? t("contact.form.error")
+              : t("contact.form.submit")}
           </button>
         </motion.form>
-
       </div>
     </section>
   );

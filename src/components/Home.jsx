@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="relative flex flex-col items-center justify-center min-h-screen text-gray-100 px-6 md:px-20 pt-32 pb-8 z-20"
+      className="relative flex flex-col items-center justify-center min-h-screen text-gray-100 px-6 md:px-20 md:pt-10 pt-32 pb-8 z-20"
     >
       <div className="max-w-4xl text-center flex flex-col items-center justify-center gap-6">
         <motion.div
@@ -52,7 +52,7 @@ export default function Home() {
             {t("home.hero.cta")}
           </a>
           <a
-            href="#projects"
+            href="#portfolio"
             className="px-10 py-3 rounded-full border border-[#00fff0]/50 text-[#00fff0] font-medium hover:bg-[#00fff0]/10 transition-all"
           >
             {t("home.hero.secondaryCta")}

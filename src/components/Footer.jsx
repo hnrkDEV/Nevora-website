@@ -1,4 +1,4 @@
-import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { useLanguage } from "../context/LanguageContext";
 
 export default function Footer() {
@@ -7,7 +7,6 @@ export default function Footer() {
   return (
     <footer className="w-full mt-32 border-t border-white/10 bg-white/5 backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
-
         {/* LOGO & DESCRIPTION */}
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3">
@@ -22,27 +21,29 @@ export default function Footer() {
           {/* SOCIAL ICONS */}
           <div className="flex gap-5 mt-2">
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/nevora.dev/"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-400 hover:text-[#00fff0] text-xl transition"
             >
               <FaInstagram />
             </a>
 
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/nevora-lab/"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-400 hover:text-[#00fff0] text-xl transition"
             >
               <FaLinkedin />
             </a>
-
             <a
-              href="https://github.com"
+              href="https://wa.me/5511950187114"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-400 hover:text-[#00fff0] text-xl transition"
             >
-              <FaGithub />
+              <FaWhatsapp />
             </a>
           </div>
         </div>
@@ -93,7 +94,7 @@ export default function Footer() {
           </p>
 
           <a
-            href="https://wa.me/5581999999999"
+            href="https://wa.me/5511950187114"
             target="_blank"
             className="px-5 py-2 rounded-full text-[#00fff0] border border-[#00fff0]/40 
                        hover:bg-[#00fff0]/10 transition text-sm"
@@ -101,7 +102,6 @@ export default function Footer() {
             {t("footer.whatsapp")}
           </a>
         </div>
-
       </div>
 
       {/* COPYRIGHT */}

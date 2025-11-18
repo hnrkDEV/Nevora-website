@@ -28,9 +28,7 @@ export default function About() {
           </h2>
 
           <div className="space-y-6 text-gray-400 text-base leading-relaxed max-w-xl whitespace-pre-line">
-            <p>
-              {t("home.about.paragraphs")}
-            </p>
+            <p>{t("home.about.paragraphs")}</p>
           </div>
 
           <div className="flex flex-wrap gap-6 mt-10">
@@ -45,7 +43,7 @@ export default function About() {
             </motion.a>
 
             <motion.a
-              href="#projects"
+              href="#portfolio"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 200, damping: 15 }}
               className="px-8 py-3 rounded-full border border-[#00fff0]/50 text-[#00fff0] font-medium 

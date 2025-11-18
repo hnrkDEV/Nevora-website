@@ -51,7 +51,7 @@ export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="relative w-full flex flex-col items-center py-40 text-gray-100 overflow-hidden"
+      className="relative w-full flex flex-col items-center py-10 text-gray-100 overflow-hidden"
     >
       {/* TITLE */}
       <h2 className="text-4xl md:text-5xl font-light text-center">
@@ -85,7 +85,7 @@ export default function Portfolio() {
       </button>
 
       {/* SLIDER */}
-      <div className="w-full overflow-hidden px-4 md:px-10 select-none relative pt-10">
+      <div className="w-full overflow-hidden px-4 md:px-10 select-none relative pt-10 pb-10">
         <motion.div
           className="flex gap-10"
           animate={{ x: -index * cardWidth }}
@@ -101,16 +101,16 @@ export default function Portfolio() {
               key={i}
               whileHover={{
                 y: -10,
-                boxShadow: "0 0 30px rgba(0,255,240,0.15)"
+                boxShadow: "0 0 30px rgba(0,255,240,0.15)",
               }}
               className="min-w-[85vw] sm:min-w-[350px] max-w-[350px] 
-                         bg-white/5 backdrop-blur-xl border border-white/10 
-                         rounded-3xl overflow-hidden"
+             bg-white/5 backdrop-blur-md border border-white/10 
+             rounded-3xl overflow-hidden flex flex-col justify-between"
             >
               <div className="w-full h-48 overflow-hidden">
                 <img
                   src={p.image}
-                  className="w-full h-full object-cover opacity-80"
+                  className="w-full h-full object-top object-cover opacity-80"
                   alt={p.title}
                 />
               </div>
