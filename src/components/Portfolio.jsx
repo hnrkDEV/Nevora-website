@@ -132,14 +132,6 @@ export default function Portfolio() {
                     </span>
                   ))}
                 </div>
-
-                <a
-                  href="#"
-                  className="block px-6 py-2 text-center rounded-full border border-[#00fff0]/40 
-                             text-[#00fff0] hover:bg-[#00fff0]/10 transition"
-                >
-                  {t("portfolio.button")}
-                </a>
               </div>
             </motion.div>
           ))}
