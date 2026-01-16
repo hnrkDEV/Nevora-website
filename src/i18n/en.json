@@ -1,94 +1,119 @@
 {
   "navbar": {
-    "navs": ["home", "about", "services", "portfolio", "contact"],
-    "links": ["#home", "#about", "#services", "#portfolio", "#contact"]
+    "navs": [
+      "home",
+      "about",
+      "skills",
+      "portfolio",
+      "contact"
+    ],
+    "links": [
+      "#home",
+      "#about",
+      "#services",
+      "#portfolio",
+      "#contact"
+    ]
   },
   "home": {
     "hero": {
       "title": "Crafting Digital Experiences",
-      "subtitle1": "We craft digital experiences that blend design, innovation, and code turning ideas into something that",
-      "highlight": "feels alive.",
-      "subtitle2": "High-end development, refined design, and intelligent engineering. We transform ideas into beautiful, scalable, and high-performance digital products.",
+      "subtitle1": "I create digital experiences that blend design, innovation, and engineering to turn ideas into solutions that",
+      "highlights": [
+        "feel alive.",
+        "scale beautifully.",
+        "perform flawlessly."
+      ],
       "cta": "Explore Services",
       "secondaryCta": "View Projects →"
     },
     "about": {
-      "titleHighlight": "Nevora",
-      "title": "Engineering Digital Futures",
+      "titleHighlight": "About Me",
+      "title": "Building Digital Solutions Through Code and Experience",
       "paragraphs": [
-        "Nevora is a technology company specializing in the development of web and mobile applications, modern interfaces, and digital solutions. We combine design, innovation, and software engineering to turn ideas into real, high-performance products. \n \n",
-        "From concept to final delivery, we craft intuitive, secure, and scalable experiences, offering integrations, automations, and consulting that raise the digital standard of companies and professionals worldwide."
+        "I’m a Full Stack developer in training, focused on modern web and mobile applications that combine software engineering, design, and usability. My main expertise is front-end development, where I build performant, responsive, and well-structured interfaces with a strong focus on user experience.\n\n",
+        "I have hands-on experience working on institutional and corporate projects, using technologies such as React, TypeScript, React Native, and REST API integrations. I’ve contributed to complete digital solutions, from layout to data integration, and to automations that transformed manual workflows into efficient digital processes. I’m driven by continuous learning, clean code practices, and delivering solutions that create real value."
       ],
-      "ctaPrimary": "Explore Services",
+      "ctaPrimary": "Skills",
       "ctaSecondary": "View Projects"
     }
   },
   "services": {
     "hero": {
-      "title": "Nevora",
-      "highlight": "Premium Services"
+      "title": "My",
+      "highlight": "Skills",
+      "subtitle": "I work on modern digital solutions, applying software engineering, automation, and functional design to solve real-world problems."
     },
     "cards": [
       {
+        "title": "Backend Development",
+        "desc": "I develop robust and scalable APIs using Node.js, TypeScript, and NestJS, with a strong focus on performance, security, and best practices.",
+        "value": "Well-structured, stable, and scalable backends."
+      },
+      {
+        "title": "Modern Web Frontend",
+        "desc": "I build modern and responsive user interfaces with React, Vite, HTML, CSS, and TailwindCSS, prioritizing user experience, accessibility, and performance.",
+        "value": "Fast, intuitive, and professional interfaces."
+      },
+      {
         "title": "Process Automation & Integrations",
-        "desc": "We connect your internal tools and systems, automating workflows that save time and reduce manual errors.",
-        "value": "Saves hours of manual work and increases productivity."
+        "desc": "I automate workflows and integrate systems and APIs, including file processing and automated routines using Node.js and Python.",
+        "value": "Reduced manual work and improved efficiency."
       },
       {
-        "title": "Technical Consulting & Code Review",
-        "desc": "We analyze and optimize your existing code to improve performance, security, and scalability.",
-        "value": "Confidence, stability, and continuous improvement."
+        "title": "Databases & Data Modeling",
+        "desc": "I work with data modeling, queries, and optimization for MySQL and MongoDB, using ORMs such as Sequelize and Prisma.",
+        "value": "Organized, secure, and high-performance data."
       },
       {
-        "title": "Dashboards & Data Visualization",
-        "desc": "We transform complex data into clear, interactive dashboards that drive strategic decisions.",
-        "value": "Faster, data-driven decisions."
+        "title": "Dashboards & Data Analysis",
+        "desc": "I create dashboards and analytical reports using Power BI, advanced Excel, and data integrations to support decision-making.",
+        "value": "Clear insights for better decisions."
       },
       {
-        "title": "Rapid Prototyping / MVP",
-        "desc": "We develop functional prototypes or MVPs to validate ideas quickly, saving time and money.",
-        "value": "Quick validation and investor-ready prototypes."
-      },
-      {
-        "title": "Growth Tech Packages",
-        "desc": "Strategic bundles combining automation, dashboards, and reporting — ready-to-scale solutions.",
-        "value": "A complete system that accelerates growth."
-      },
-      {
-        "title": "Mobile Applications Development",
-        "desc": "We design and develop high-performance mobile apps for iOS and Android — built with modern frameworks and seamless UX.",
-        "value": "Reach your audience anywhere, with apps that combine design, performance, and scalability."
+        "title": "DevOps Basics & Deployment",
+        "desc": "I handle application deployment and maintenance on VPS and cloud environments, using Docker, PM2, Nginx, Git, and simple CI/CD pipelines.",
+        "value": "Stable, secure, and well-deployed applications."
       }
     ],
     "quote": {
-      "text": "We build digital systems that work like living organisms: smart, adaptive, and built to grow.",
-      "subtext": "From automations to analytics, every project we create is designed to evolve with your business — fast, elegant, and reliable."
+      "text": "I build digital systems that work like living organisms: smart, adaptive, and built to grow.",
+      "subtext": "From automations to analytics, every project we create is designed to evolve with your business. Fast, elegant, and reliable."
     },
     "buttons": {
       "viewProjects": "View Projects",
-      "contactUs": "Contact Us"
+      "contactUs": "Contact Me"
     },
-    "metrics": [
-      {
-        "value": "50+",
-        "label": "Projects Delivered"
+    "timelineJourney": {
+      "instruction": "Press → to explore my journey",
+      "labels": {
+        "start": "Start",
+        "youtube": "Video class",
+        "college": "College",
+        "courses": "Courses",
+        "iassepe": "IASSEPE",
+        "cattavento": "Cattavento"
       },
-      {
-        "value": "8+",
-        "label": "Tech Stacks"
+      "titles": {
+        "startTitle": "Journey Begins",
+        "youtubeTitle": "Video Class",
+        "collegeTitle": "College",
+        "coursesTitle": "Online Courses",
+        "iassepeTitle": "IASSEPE",
+        "cattaventoTitle": "Cattavento"
       },
-      {
-        "value": "10k+",
-        "label": "Lines of Code"
-      },
-      {
-        "value": "100%",
-        "label": "Client Satisfaction"
+      "descriptions": {
+        "startDesc": "Press → to continue.",
+        "youtubeDesc": "Study, practice and content to grow.",
+        "collegeDesc": "Academic foundation and fundamentals.",
+        "coursesDesc": "Udemy and EBAC focused on real projects.",
+        "iassepeDesc": "Real-world systems experience.",
+        "cattaventoDesc": "Professional digital solutions."
       }
-    ]
+    }
   },
   "portfolio": {
-    "title": "Our",
+    "title": "A few of my",
     "highlight": "Projects",
     "subtitle": "A showcase of modern platforms, dashboards, automations and interfaces crafted with engineering and premium UI.",
     "button": "View Project →",
@@ -97,55 +122,101 @@
         "title": "Rhally — HR Platform",
         "desc": "A complete human resources management system designed to streamline corporate operations. It includes integrated modules for time tracking, employee onboarding, benefits management, and recruitment, enabling centralized and efficient administration. Built with React, Node.js, and MySQL for scalability and high performance.",
         "image": "/rhally.com.br_.png",
-        "tech": ["React", "Node.js", "MySQL"]
+        "tech": [
+          "React",
+          "Node.js",
+          "MySQL"
+        ]
       },
       {
-        "title": "AgilizaBPO — Briefing Page",
+        "title": "Ettika — Briefing Page",
         "desc": "A strategic landing page focused on lead generation and qualification for companies seeking BPO services. The system processes automated briefing forms and integrates data with the backend, optimizing the commercial workflow. Developed using React, Express, and MySQL with emphasis on speed and efficiency.",
         "image": "/briefing.agilizabpo.com.br_.png",
-        "tech": ["React", "Express", "MySQL"]
+        "tech": [
+          "React",
+          "Express",
+          "MySQL"
+        ]
       },
       {
         "title": "CSC RedeGess",
         "desc": "A web application developed to centralize third-party service requests within the CSC RedeGess structure. The system ensures agility in submitting and tracking internal requests, featuring a fluid interface with smooth animations built using Framer Motion and AOS. Designed with a focus on usability and process clarity.",
         "image": "/csc.redegess.com.br_.png",
-        "tech": ["React", "AOS", "Framer Motion"]
+        "tech": [
+          "React",
+          "AOS",
+          "Framer Motion"
+        ]
       },
       {
         "title": "MaisRH — Corporate Website",
         "desc": "A corporate portal built for MaisRH to facilitate communication and document exchange with clients. The project uses React for the frontend, Node.js for backend logic, and MongoDB for data storage, offering a modern, secure structure with real-time updates and responsive design.",
         "image": "/maisRHwebsite.jpeg",
-        "tech": ["React", "MongoDB", "Node.js"]
+        "tech": [
+          "React",
+          "MongoDB",
+          "Node.js"
+        ]
       },
       {
         "title": "Lustria E-commerce",
         "desc": "An e-commerce platform for selling plants and gardening items, focused on clean design and a smooth shopping experience. Features include a dynamic product catalog, persistent cart, and payment API integration. Built with React, Node.js, and MongoDB to ensure performance and SEO optimization.",
         "image": "/Lustria.jpeg",
-        "tech": ["React", "Node.js", "MongoDB"]
+        "tech": [
+          "React",
+          "Node.js",
+          "MongoDB"
+        ]
       },
       {
         "title": "Client Ebook Website",
         "desc": "An interactive landing page designed to promote and sell e-books, with a strong focus on lead generation and conversion. Built with React and subtle Framer Motion animations for a modern experience. The Node.js backend handles form submissions and lead management efficiently.",
         "image": "/Ebook.jpeg",
-        "tech": ["React", "Framer Motion", "Node.js"]
+        "tech": [
+          "React",
+          "Framer Motion",
+          "Node.js"
+        ]
       },
       {
         "title": "Rhally Mobile",
-        "desc": "The mobile version of the Rhally HR platform, built with React Native and Node.js. The app allows users to manage time tracking, benefits, and onboarding directly from their smartphones, featuring real-time synchronization via REST API and a responsive UI for Android and iOS.",
+        "desc": "Versão mobile da plataforma de RH Rhally, desenvolvida com React Native e backend Node.js. O aplicativo oferece funcionalidades de ponto eletrônico, acompanhamento de benefícios e gestão de admissões diretamente pelo smartphone, com sincronização em tempo real via API REST e interface adaptada para Android e iOS.",
         "image": "/rhallyMobile.png",
-        "tech": ["React Native", "Node.js", "MySQL"]
+        "tech": [
+          "React Native",
+          "Node.js",
+          "MySQL"
+        ]
       },
       {
         "title": "MovieFlix",
-        "desc": "A web app for browsing and viewing movies and TV shows, inspired by modern streaming platforms. Developed with React and styled using Tailwind, it employs AOS for entry animations and a performance-driven architecture. Ideal for demonstrating API integration and UI responsiveness.",
+        "desc": "Aplicativo web de catálogo e visualização de filmes e séries, inspirado em plataformas de streaming. Desenvolvido com React e estilizado com Tailwind, utiliza AOS para efeitos de entrada e uma arquitetura voltada à performance e experiência de navegação fluida. Ideal para demonstração de integração com APIs públicas.",
         "image": "/MovieFlix.jpeg",
-        "tech": ["React", "Tailwind", "AOS"]
+        "tech": [
+          "React",
+          "Tailwind",
+          "AOS"
+        ]
       },
       {
-        "title": "AgilizaBPO — Corporate Website",
-        "desc": "A modern corporate website for AgilizaBPO, built to enhance the company’s digital presence and streamline communication with partner businesses. Featuring responsive design, smooth animations, and a Node.js backend with MySQL integration to ensure stability, performance, and efficient content management.",
+        "title": "Metodo Gess — Corporate Website",
+        "desc": "Website institucional moderno da Metodo Gess, desenvolvido para fortalecer a presença digital da marca e facilitar o relacionamento com empresas parceiras. Apresenta design responsivo, animações leves e backend Node.js integrado ao banco MySQL, garantindo velocidade, estabilidade e gestão otimizada de conteúdo.",
         "image": "/AgilizaBPO.jpeg",
-        "tech": ["React", "Node.js", "MySQL"]
+        "tech": [
+          "React",
+          "Node.js",
+          "MySQL"
+        ]
+      },
+      {
+        "title": "Job Portal",
+        "desc": "A job platform that connects candidates and companies in a clear and efficient way.In the Candidate Area, users can view all job openings, track application statuses, and update their profile with a photo and personal information.In the Administrative Area (ADM), the platform allows posting and managing jobs, monitoring overall metrics, managing users, and accessing detailed candidate information, including resumes.",
+        "image": "/vagas.jpg",
+        "tech": [
+          "React",
+          "Node.js",
+          "MongoDB"
+        ]
       }
     ]
   },
@@ -157,11 +228,11 @@
     "whatsapp": "Contact us on WhatsApp",
     "form": {
       "nameLabel": "Your Name",
-      "namePlaceholder": "John Doe",
+      "namePlaceholder": "Laura Souza",
       "emailLabel": "Email",
-      "emailPlaceholder": "john@email.com",
+      "emailPlaceholder": "Laura@email.com",
       "messageLabel": "Message",
-      "messagePlaceholder": "Tell us more about your project...",
+      "messagePlaceholder": "Tell me more about your project...",
       "submit": "Send Message",
       "success": "Sent with success!",
       "sending": "Sending...",
@@ -174,12 +245,12 @@
     "navLinks": {
       "home": "Home",
       "about": "About",
-      "services": "Services",
+      "services": "Skills",
       "portfolio": "Portfolio",
       "contact": "Contact"
     },
     "talkTitle": "Let's talk",
-    "talkDescription": "Need a project, redesign or partnership? We reply within minutes.",
+    "talkDescription": "Need a project, redesign or partnership? I reply within minutes.",
     "whatsapp": "WhatsApp →",
     "rights": "All rights reserved."
   }
