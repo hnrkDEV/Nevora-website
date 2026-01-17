@@ -92,8 +92,7 @@ export default function About() {
           <img
             src="/about-img.png"
             alt="Sobre mim"
-            className="w-full max-w-md rounded-2xl
-                      "
+            className="w-full max-w-md rounded-2xl"
           />
         </motion.div>
       </div>

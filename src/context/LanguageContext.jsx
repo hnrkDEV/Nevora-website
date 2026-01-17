@@ -6,9 +6,9 @@ const langs = { en, pt };
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState("pt");
 
-  const toggleLang = () => setLang(lang === "en" ? "pt" : "en");
+  const toggleLang = () => setLang(lang === "pt" ? "en" : "pt");
   const t = (key, options = {}) => {
     const keys = key.split(".");
     let result = langs[lang];
